@@ -1,0 +1,393 @@
+/* Food Page Specific Styles */
+body {
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0;
+    background: white;
+    min-height: 100vh;
+}
+
+.back-header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.back-header h1 {
+    font-size: 18px;
+    margin: 0;
+    flex: 1;
+}
+
+.meal-timings {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.meal-time {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.meal-time i {
+    font-size: 20px;
+    color: #666;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+}
+
+.meal-details h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.meal-details p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.menu-nav {
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    background: white;
+    position: sticky;
+    top: 60px;
+    z-index: 90;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-nav-btn {
+    white-space: nowrap;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #f5f5f5;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.menu-nav-btn.active {
+    background: #000;
+    color: white;
+}
+
+.menu-container {
+    padding: 16px;
+}
+
+/* Keep your existing menu styles but remove modal-specific styling */ 
+
+/* Add these styles to your existing food.css */
+.menu-section {
+    display: none;
+}
+
+.menu-section.active {
+    display: block;
+}
+
+.menu-timing {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-timing:before {
+    content: "\f017";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.menu-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.menu-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.menu-table tr:last-child td {
+    border-bottom: none;
+}
+
+.menu-table td:first-child {
+    width: 120px;
+    font-weight: 500;
+    color: #333;
+}
+
+.menu-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-table li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.menu-table li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.menu-table li:last-child {
+    margin-bottom: 0;
+}
+
+/* Add these styles for À La Carte section */
+.menu-section[data-menu="alacarte"] .menu-table td {
+    padding: 10px 16px;
+}
+
+.menu-section[data-menu="alacarte"] .price {
+    text-align: right;
+    width: 80px;
+    font-weight: 500;
+    color: #333;
+}
+
+.menu-section[data-menu="alacarte"] .menu-timing {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.menu-section[data-menu="alacarte"] .menu-timing i {
+    color: #666;
+}
+
+/* Add these styles for Traditional Delight section */
+.menu-section[data-menu="traditional"] .menu-prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.menu-section[data-menu="traditional"] .price-item {
+    background: #000;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-section[data-menu="traditional"] .price-label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+
+.menu-section[data-menu="traditional"] .price-value {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-section[data-menu="traditional"] .menu-inclusion {
+    background: #f8f9fa;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-section[data-menu="traditional"] .menu-inclusion i {
+    color: #28a745;
+}
+
+/* Update À La Carte specific styles */
+.alacarte-table {
+    margin: 0 -16px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.alacarte-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.alacarte-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.alacarte-table tr:last-child {
+    border-bottom: none;
+}
+
+.alacarte-table td {
+    padding: 12px 16px;
+    vertical-align: middle;
+}
+
+.alacarte-table .item-name {
+    color: #333;
+    font-size: 14px;
+    padding-right: 24px;
+}
+
+.alacarte-table .item-desc {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.alacarte-table .item-price {
+    text-align: right;
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 80px;
+}
+
+.menu-category {
+    margin-bottom: 24px;
+}
+
+.menu-category h4 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-category .timing {
+    font-size: 13px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+    .alacarte-table {
+        margin: 0 -12px;
+        border-radius: 6px;
+    }
+
+    .alacarte-table td {
+        padding: 10px 12px;
+    }
+    
+    .alacarte-table .item-name {
+        font-size: 13px;
+        padding-right: 16px;
+    }
+    
+    .alacarte-table .item-desc {
+        font-size: 11px;
+    }
+    
+    .alacarte-table .item-price {
+        font-size: 13px;
+    }
+
+    .menu-category h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Card styles for experiences without images */
+.experience-card.card-minimal {
+    background: #f8f9fa;
+    border: none;
+    box-shadow: none;
+}
+
+.experience-card.card-minimal .experience-content {
+    padding: 24px;
+}
+
+.experience-card.card-minimal:hover {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+    .menu-section[data-menu="alacarte"] .menu-table tr {
+        padding: 12px;
+    }
+    
+    .experience-card.card-minimal .experience-content {
+        padding: 16px;
+    }
+} 
