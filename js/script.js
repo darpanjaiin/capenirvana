@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'rules-btn': 'rules-modal',
         'specials-btn': 'specials-modal',
         'amenities-card': 'amenities-modal',
-        'gallery-card': 'gallery-modal'
+        'gallery-card': 'gallery-modal',
+        'food-card': 'food-modal'
     };
 
     // Add click handlers for all buttons
@@ -273,6 +274,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add this to your gallery card click handler or wherever you initialize the food modal
     document.getElementById('food-card').addEventListener('click', function() {
-        window.location.href = 'food.html';
+        const foodModal = document.getElementById('food-modal');
+        if (foodModal) {
+            foodModal.style.display = 'block';
+            document.body.classList.add('modal-open');
+        }
     });
 }); 
