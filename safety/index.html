@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DNYN4PH57"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9DNYN4PH57');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cape Nirvana</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta property="og:image" content="assets/favicon.jpg" />
+    <meta property="og:title" content="Cape Nirvana" />
+    <meta property="og:description" content="Panshet, Maharashtra" />
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image">
+            <a href="https://www.instagram.com/katharetreats/" target="_blank" class="instagram-follow-btn">
+                <i class="fab fa-instagram"></i>
+                <span>Follow Cape Nirvana</span>
+            </a>
+            <img src="assets/heroimage.jpg" alt="Cape Nirvana" loading="eager">
+        </div>
+        <header>
+            <h1>Welcome to<br>Cape Nirvana</h1>
+            <p class="tagline">
+                Panshet, Maharashtra
+            </p>
+            <p class="sub-tagline">
+                A finely crafted 5-bedroom luxury homestay featuring a private pool and breathtaking scenic lake views, located just an hour away from Pune.</p>
+        </header>
+
+        <div class="quick-access-grid">
+      
+            <div class="grid-item" id="nearby-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <h3>Location</h3>
+            </div>
+            <div class="grid-item" id="reviews-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Reviews</h3>
+            </div>
+       
+            <div class="grid-item" id="emergency-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-phone-volume"></i>
+                </div>
+                <h3>Emergency<br>Contact</h3>
+            </div>
+            <div class="grid-item" id="rules-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-scroll"></i>
+                </div>
+                <h3>Home<br>Rules</h3>
+            </div>
+            <div class="grid-item" onclick="openAirbnb()">
+                <div class="icon-wrapper">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Check<br>Availability</h3>
+            </div>
+            <div class="grid-item" id="book-now-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Book<br>Now</h3>
+            </div>
+        </div>
+
+        <section class="featured-sections">
+  
+            <div class="feature-card" id="amenities-card">
+                <img src="assets/amenities.jpg" alt="Amenities">
+                <div class="card-content">
+                    <h2>Amenities</h2>
+                    <p>Find what's inside</p>
+                </div>
+            </div>
+            <div class="feature-card" id="food-card">
+                <img src="assets/food.jpg" alt="Food and Dining">
+                <div class="card-content">
+                    <h2>Food</h2>
+                    <p>Dine and Unwind</p>
+                </div>
+            </div>
+            <div class="feature-card" id="gallery-card">
+                <img src="assets/gallery.jpg" alt="Property Gallery">
+                <div class="card-content">
+                    <h2>Gallery</h2>
+                    <p>View property images</p>
+                </div>
+            </div>
+
+            <div class="feature-card" id="nearby-experiences">
+                <img src="assets/nearby.jpg" alt="Nearby Experiences">
+                <div class="card-content">
+                    <h2>Nearby Experiences</h2>
+                    <p>Explore local attractions</p>
+                </div>
+            </div>
+
+           
+        </section>
+
+        <footer>
+            <p class="quote">This house becomes more than bricks and mortar when it holds the laughter and memories of travelers like you.</p>
+            <div class="footer-buttons">
+                <button id="book-now-footer-btn">Book Now</button>
+                <button id="share-btn">Share property</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Property Gallery</h2>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    All
+                </button>
+                <button class="filter-btn" data-filter="rooms">
+                    <i class="fas fa-bed"></i>
+                    Rooms
+                </button>
+                <button class="filter-btn" data-filter="common">
+                    <i class="fas fa-couch"></i>
+                    Common Areas
+                </button>
+                <button class="filter-btn" data-filter="outdoor">
+                    <i class="fas fa-umbrella-beach"></i>
+                    Outdoor
+                </button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Rooms -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="assets/gallery/room1.jpg" alt="Luxury Room" loading="lazy">
+                    <p>Luxury Room</p>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="assets/gallery/room2.jpg" alt="Deluxe Room" loading="lazy">
+                    <p>Deluxe Room</p>
+                </div>
+                <div class="gallery-item" data-category="rooms">
+                    <img src="assets/gallery/room3.jpg" alt="Premium Room" loading="lazy">
+                    <p>Premium Room</p>
+                </div>
+
+                <!-- Common Areas -->
+                <div class="gallery-item" data-category="common">
+                    <img src="assets/gallery/deck.jpg" alt="Deck Area" loading="lazy">
+                    <p>Deck Area</p>
+                </div>
+                <div class="gallery-item" data-category="common">
+                    <img src="assets/gallery/shed1.jpg" alt="Common Lounge" loading="lazy">
+                    <p>Common Lounge</p>
+                </div>
+                <div class="gallery-item" data-category="common">
+                    <img src="assets/gallery/shed2.jpg" alt="Dining Area" loading="lazy">
+                    <p>Dining Area</p>
+                </div>
+
+                <!-- Outdoor Areas -->
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/exterior.jpg" alt="Property Exterior" loading="lazy">
+                    <p>Property Exterior</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/pool1.jpg" alt="Swimming Pool" loading="lazy">
+                    <p>Swimming Pool</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/pool2.jpg" alt="Pool Area" loading="lazy">
+                    <p>Pool Area</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/lawn.jpg" alt="Garden Lawn" loading="lazy">
+                    <p>Garden Lawn</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/lake.jpg" alt="Lake View" loading="lazy">
+                    <p>Lake View</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/outside.jpg" alt="Outdoor Seating" loading="lazy">
+                    <p>Outdoor Seating</p>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <img src="assets/gallery/riverview.jpg" alt="River View" loading="lazy">
+                    <p>River View</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="nearby-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Address & Best way to reach</h2>
+            <div class="modal-sections">
+                <div class="modal-section">
+                    <div class="address-card">
+                        <div class="address-content">
+                            <h3>📍 Property Address</h3>
+                            <p>Panshet, India<br> Just a 2.5 hour drive from Mumbai</p>
+                            <a href="https://www.google.com/maps/place/Cape+Nirvana/data=!4m2!3m1!1s0x0:0x71640aac555b5fd9?sa=X&ved=1t:2428&ictx=111" 
+                               target="_blank" 
+                               class="map-button">
+                                <i class="fas fa-map-marker-alt"></i> Open in Google Maps
+                            </a>
+                        </div>
+                        <div class="map-preview">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4475018174387!2d73.55219871489959!3d18.356115687497433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29d5aaf6413cf%3A0x71640aac555b5fd9!2sCape%20Nirvana!5e0!3m2!1sen!2sin!4v1625641234567!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="200" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>🚗 How to Reach</h3>
+                    <ul class="transport-options">
+                        <li>
+                            <strong>Private Taxi:</strong> Pick up and drop facility can be arranged at prior request (additional cost applies).
+                        </li>
+                        <li>
+                            <strong>By Bus:</strong> Swargate Bus Stand, Pune (45 km) is the closest major bus terminal
+                        </li>
+                        <li>
+                            <strong>By Train:</strong> Pune Railway Station (50 km) is the nearest major railway station
+                        </li>
+                        <li>
+                            <strong>By Air:</strong> Pune International Airport (60 km) is the closest airport
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="emergency-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Emergency Contacts</h2>
+            <div class="modal-sections">
+                <div class="modal-section emergency">
+                    <h3>Emergency Services</h3>
+                    <p>• Police: 100</p>
+                    <p>• Ambulance: 108</p>
+                    <p>• Fire Brigade: 104</p>
+                    <p>• Pune Municipal Corporation: 1800-1030-222</p>
+                    <p>• Disaster Management Control Room: 1077</p>
+                    <p>• Child Helpline: 1098</p>
+                    <p>• Women Helpline: 1091</p>
+                    <p>• NIC Service Desk: 1800-111-555</p>
+                    <p>• Corona Virus Central Helpline: 011-23978043/46</p>
+                    <p>• Corona Virus Maharashtra Helpline: 020-26127394</p>
+                    <p>• Host Contact: +91 9850769955</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rules-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>House Rules</h2>
+            <div class="rules-grid">
+                <div class="rule-category">
+                    <div class="category-header" data-category="check-in">
+                        <h3>⏰ Check-in/Check-out</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Check-in: 1:30 PM</p>
+                        <p>• Check-out: 11:30 AM</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="must-read">
+                        <h3>⚠️ Must Read Rules</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Unmarried couples are not allowed</p>
+                        <p>• Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s)</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="guest-profile">
+                        <h3>👥 Guest Profile</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Unmarried couples are not allowed</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="id-proof">
+                        <h3>🪪 ID Proof Related</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Local IDs not allowed</p>
+                        <p>• Passport, Aadhar, Driving License and Govt. ID are accepted as ID proof(s)</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="smoking">
+                        <h3>🚬 Smoking/Alcohol Rules</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• There are no restrictions on alcohol consumption</p>
+                        <p>• Smoking within the premises is allowed</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="pet-policy">
+                        <h3>🐾 Pet Policy</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Pets are allowed (maximum 3 pets)</p>
+                        <p>• Pets are not allowed in: Bedrooms, On the bed, Swimming Pool, Kitchen</p>
+                        <p>• Pet food is not available at the property</p>
+                        <p>• Pets are allowed to roam without a leash</p>
+                        <p>• All pets are allowed at the property</p>
+                        <p>• There are living pets at the property (dogs)</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="accessibility">
+                        <h3>♿ Accessibility</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Property is senior citizen friendly and easily accessible by wheelchair users.</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="check-in-process">
+                        <h3>🔑 Check-in Process</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Caretakes are available at the property for smooth check in</p>
+                    </div>
+                </div>
+
+                <div class="rule-category">
+                    <div class="category-header" data-category="other-important">
+                        <h3>📜 Other Important Rules</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="category-content">
+                        <p>• Outside food is strictly not allowed.</p>
+                        <p>• Mandatory Refundable deposit of minimum INR 5000/- or as mentioned by the host.</p>
+                        <p>• Villa management not responsible for the loss or damage to the valuables of the guests.</p>
+                        <p>• Only confirmed number of guests allowed; extra guests charged at check-in</p>
+                        <p>• Service charge may apply for outside/self-prepared food</p>
+                        <p>• Keep music at moderate level per Local Gaon rules</p>
+                        <p>• No smoking inside Villa rooms</p>
+                        <p>• No personal work assignments to villa caretakers</p>
+                        <p>• No arms and ammunition allowed</p>
+                        <p>• No illegal drugs or activities</p>
+                        <p>• Villa not responsible for valuables</p>
+                        <p>• Guests liable for property damage</p>
+                        <p>• Villa not responsible for injuries/accidents</p>
+                        <p>• Unruly behavior will result in eviction without refund</p>
+                        <p>• Close doors/windows when not in room due to wildlife</p>
+                        <p>• Voltage fluctuations common; backup available</p>
+                        <p>• Private parties/events allowed</p>
+                        <p>• No outside visitors allowed in rooms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="specials-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Nearby Experiences</h2>
+            
+            <div class="experiences-grid">
+                <div class="experience-card">
+                    <div class="experience-image">
+                        <img src="assets/chinchani.jpg" alt="Chinchani Beach">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Chinchani Beach</h3>
+                        <p class="distance"><i class="fas fa-location-dot"></i> 26 km away</p>
+                        <p class="description">
+                            A serene and peaceful beach perfect for evening walks and stunning sunsets. Enjoy camel rides, 
+                            horse rides, and visit the nearby temple for a spiritual experience.
+                        </p>
+                        <div class="experience-features">
+                            <span><i class="fas fa-horse"></i> Horse Rides</span>
+                            <span><i class="fas fa-camel"></i> Camel Rides</span>
+                            <span><i class="fas fa-gopuram"></i> Temple</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-minimal">
+                    <div class="experience-content">
+                        <h3>Asava Fort</h3>
+                        <p class="distance"><i class="fas fa-location-dot"></i> 4.7 km away</p>
+                        <p class="description">
+                            Standing at 1070 feet high, this historic fort offers a perfect blend of adventure and history.
+                        </p>
+                        <div class="experience-features">
+                            <span><i class="fas fa-mountain"></i> 1070 ft High</span>
+                            <span><i class="fas fa-hiking"></i> Easy Trek</span>
+                            <span><i class="fas fa-landmark"></i> Historic Site</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-minimal">
+                    <div class="experience-content">
+                        <h3>Dhodhadi Waterfalls</h3>
+                        <p class="distance"><i class="fas fa-location-dot"></i> 12.6 km away</p>
+                        <p class="description">
+                            A refreshing 30-minute trek through lush greenery leads to this beautiful waterfall. Perfect for nature lovers.
+                        </p>
+                        <div class="experience-features">
+                            <span><i class="fas fa-clock"></i> 30 Min Trek</span>
+                            <span><i class="fas fa-tree"></i> Lush Greenery</span>
+                            <span><i class="fas fa-water"></i> Waterfall</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card card-minimal">
+                    <div class="experience-content">
+                        <h3>Kaldurg Fort</h3>
+                        <p class="distance"><i class="fas fa-location-dot"></i> 12.7 km away</p>
+                        <p class="description">
+                            An easy trek rewards you with stunning panoramic views of the surrounding landscape.
+                        </p>
+                        <div class="experience-features">
+                            <span><i class="fas fa-hiking"></i> Easy Trek</span>
+                            <span><i class="fas fa-mountain"></i> Panoramic Views</span>
+                            <span><i class="fas fa-landmark"></i> Historic Fort</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Leave a Feedback</h2>
+            <form id="feedback-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Feedback" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="food-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Food & Dining</h2>
+            <div class="modal-sections">
+                <div class="modal-section">
+                    <h3>🕒 Meal Timings</h3>
+                    <div class="meal-timings">
+                        <div class="meal-time">
+                            <i class="fas fa-sun"></i>
+                            <div class="meal-details">
+                                <h4>Breakfast</h4>
+                                <p>9:00 AM - 10:00 AM</p>
+                            </div>
+                        </div>
+                        <div class="meal-time">
+                            <i class="fas fa-utensils"></i>
+                            <div class="meal-details">
+                                <h4>Lunch</h4>
+                                <p>2:00 PM - 3:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="meal-time">
+                            <i class="fas fa-coffee"></i>
+                            <div class="meal-details">
+                                <h4>High Tea</h4>
+                                <p>5:00 PM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="meal-time">
+                            <i class="fas fa-moon"></i>
+                            <div class="meal-details">
+                                <h4>Dinner</h4>
+                                <p>9:00 PM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <div class="menu-filters">
+                        <button class="menu-filter-btn active" data-menu="veg">
+                            <i class="fas fa-leaf"></i>
+                            Veg Menu
+                        </button>
+                        <button class="menu-filter-btn" data-menu="mix">
+                            <i class="fas fa-utensils"></i>
+                            Mix Menu
+                        </button>
+                        <button class="menu-filter-btn" data-menu="alacarte">
+                            <i class="fas fa-concierge-bell"></i>
+                            A La Carte
+                        </button>
+                        <button class="menu-filter-btn" data-menu="traditional">
+                            <i class="fas fa-mortar-pestle"></i>
+                            Traditional Delight
+                        </button>
+                    </div>
+
+                    <div class="menu-content">
+                        <!-- Veg Menu -->
+                        <div class="menu-section active" data-menu="veg">
+                            <div class="menu-price">₹2,100/- per person</div>
+                            
+                            <div class="menu-category">
+                                <h4>Lunch & Dinner Buckets</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Bucket</th>
+                                                <th>Items</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bucket 1</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Paneer Butter Masala • Aloo Jeera</li>
+                                                        <li>Phulka/Tawa Paratha • Dal Makhani</li>
+                                                        <li>Steamed Rice</li>
+                                                        <li>Papad, Pickle, Salad • Sevaiyan Kheer</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 2</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Veg. Kolhapuri</li>
+                                                        <li>Aloo Gobi</li>
+                                                        <li>Phulka/Tawa Paratha • Dal Fry</li>
+                                                        <li>Peas Pulao</li>
+                                                        <li>Papad, Pickle, Salad • Gulab Jamun</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 3</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Paneer Kadhai • Bhindi Masala</li>
+                                                        <li>Phulka/Tawa Paratha • Dal Tadka</li>
+                                                        <li>Jeera Rice</li>
+                                                        <li>Papad, Pickle, Salad • Jalebi</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 4</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Bharli Vangi • Zhunka</li>
+                                                        <li>Bhakri</li>
+                                                        <li>Masale Bhat • Koshimbir</li>
+                                                        <li>Papad, Pickle, Salad • Sheera</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 6</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Plum Tomato Soup</li>
+                                                        <li>Red/White Sauce Pasta</li>
+                                                        <li>Quesadilla (Corn And Cheese) • Garlic Toast</li>
+                                                        <li>Fruit Custard</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 7</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Punjabi Aloo Tikki • Amritsari Chole</li>
+                                                        <li>Tawa Pulao</li>
+                                                        <li>Bhature</li>
+                                                        <li>Papad, Pickle, Raita • Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 8</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Manchow Soup</li>
+                                                        <li>Paneer Manchurian (Dry/Gravy)</li>
+                                                        <li>Stir-Fry Vegetables (Hot Garlic Sauce) • Hakka Noodles</li>
+                                                        <li>Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 9</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hara Bhara Kebab • Pav Bhaji</li>
+                                                        <li>Veg. Biryani • Masala Pav</li>
+                                                        <li>Papad, Pickle, Raita • Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>Breakfast</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Light Breakfast<br>(Choose any 1)</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poha</li>
+                                                        <li>Upma</li>
+                                                        <li>Sabudana Khichdi</li>
+                                                        <li>Besan Chilla With Pickle & Curd</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy Breakfast<br>(Choose any 1)</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Medu Vada With Chutney & Sambar</li>
+                                                        <li>Puneri Misal Pav</li>
+                                                        <li>Puri & Aloo Bhaji</li>
+                                                        <li>Baked Beans On Toast</li>
+                                                        <li>Thalipeeth</li>
+                                                        <li>Idli With Chutney & Sambar</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Accompaniments</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Tea/Coffee • Bread Butter & Jam</li>
+                                                        <li>Fruit (Any 1): Watermelon/Papaya/Banana</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>High Tea</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Evening Snacks<br>(Choose any 1)</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Vegetable Pakoda (Onion, Potato, Cauliflower And Chilly) • Bread Pakoda</li>
+                                                        <li>Vada Pav</li>
+                                                        <li>Bombay Sandwich • Samosa</li>
+                                                        <li>Bhel</li>
+                                                        <li>Sev Puri</li>
+                                                        <li>Moong Dal Vada</li>
+                                                        <li>Cheese Sandwich</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Accompaniments</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Tea/Coffee</li>
+                                                        <li>French Fries</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mix Menu -->
+                        <div class="menu-section" data-menu="mix">
+                            <div class="menu-price">₹2,500/- per person</div>
+                            
+                            <div class="menu-category">
+                                <h4>Lunch & Dinner Buckets</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Bucket</th>
+                                                <th>Items</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bucket 1</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Butter Chicken</li>
+                                                        <li>Paneer Butter Masala</li>
+                                                        <li>Aloo Jeera</li>
+                                                        <li>Phulka</li>
+                                                        <li>Dal Makhani</li>
+                                                        <li>Steamed Rice</li>
+                                                        <li>Papad, Pickle, Salad • Sevaiyan Kheer</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 2</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Saag Murgh</li>
+                                                        <li>Veg. Kolhapuri • Aloo Gobi</li>
+                                                        <li>Ajwain Paratha • Dal Fry</li>
+                                                        <li>Peas Pulao</li>
+                                                        <li>Papad, Pickle, Salad • Gulab Jamun</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 3</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Chicken Lababdar • Paneer Kadhai</li>
+                                                        <li>Bhindi Masala</li>
+                                                        <li>Phulka/Tawa Paratha • Dal Tadka</li>
+                                                        <li>Jeera Rice</li>
+                                                        <li>Papad, Pickle, Salad • Jalebi</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 4</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Kolhapuri Chicken • Bharli Vangi</li>
+                                                        <li>Zhunka</li>
+                                                        <li>Bhakri</li>
+                                                        <li>Masale Bhat • Koshimbir</li>
+                                                        <li>Papad, Pickle, Salad • Sheera</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 6</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Plum Tomato Soup</li>
+                                                        <li>Chicken Fajita Wrap</li>
+                                                        <li>Red/White Sauce Pasta</li>
+                                                        <li>Quesadilla (Corn And Cheese) • Garlic Toast</li>
+                                                        <li>Fruit Custard</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 7</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Punjabi Aloo Tikki</li>
+                                                        <li>Amritsari Chole</li>
+                                                        <li>Chicken Kheema Pav • Tawa Pulao</li>
+                                                        <li>Bhature</li>
+                                                        <li>Raita, Papad, Pickle • Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 8</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Manchow Soup</li>
+                                                        <li>Chicken Chilli (Dry/Gravy)</li>
+                                                        <li>Paneer Manchurian (Dry/Gravy)</li>
+                                                        <li>Stir-Fry Vegetables (Hot Garlic Sauce)</li>
+                                                        <li>Hakka Noodles • Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bucket 9</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hara Bhara Kebab • Pav Bhaji</li>
+                                                        <li>Veg. Biryani</li>
+                                                        <li>Chicken Biryani • Masala Pav</li>
+                                                        <li>Raita, Papad, Pickle • Ice Cream</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>Breakfast</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options (Choose any 1)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Light Breakfast<br>(Choose any 1)</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poha</li>
+                                                        <li>Upma</li>
+                                                        <li>Sabudana Khichadi</li>
+                                                        <li>Besan Chilla With Pickle & Curd</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Heavy Breakfast<br>(Choose any 1)</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Medu Vada With Chutney & Sambar</li>
+                                                        <li>Puneri Misal Pav</li>
+                                                        <li>Puri & Aloo Bhaji</li>
+                                                        <li>Baked Beans On Toast</li>
+                                                        <li>Thalipeeth</li>
+                                                        <li>Idli With Chutney & Sambar</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Accompaniments</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Tea/Coffee</li>
+                                                        <li>Bread Butter & Jam</li>
+                                                        <li>Eggs To Order (Sunny Side Up, Omelette, Bhurji)</li>
+                                                        <li>Fruit (Any 1): Watermelon/Papaya/Banana</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>High Tea</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options (Choose any 1)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Snacks</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Vegetable Pakoda (onion, potato, cauliflower, chilly)</li>
+                                                        <li>Vada Pav</li>
+                                                        <li>Bombay Sandwich</li>
+                                                        <li>Cheese Sandwich</li>
+                                                        <li>Bhel</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Accompaniments</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Tea/Coffee</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-note important">
+                                <p><i class="fas fa-info-circle"></i> Important Notes:</p>
+                                <ul>
+                                    <li>Along with the food package, guests can select up to 2 dishes from above.</li>
+                                    <li>For À la carte menu only, guests can select up to 4 dishes from above.</li>
+                                    <li>All rates mentioned are per plate.</li>
+                                    <li>Guests can place an order of any 1 veg or non-veg item.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Traditional Delight Menu (Placeholder) -->
+                        <div class="menu-section" data-menu="traditional">
+                            <div class="menu-prices">
+                                <div class="price-item">
+                                    <span class="price-label">Veg</span>
+                                    <span class="price-value">₹1,500/- per person, per day</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="price-label">Non-Veg</span>
+                                    <span class="price-value">₹1,800/- per person, per day</span>
+                                </div>
+                            </div>
+                            
+                            <div class="menu-inclusion">
+                                <p><i class="fas fa-check-circle"></i> Includes: Breakfast, Lunch, High Tea, and Dinner</p>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>Vegetarian Options</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options (Choose any 1)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Breakfast</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poha</li>
+                                                        <li>Upma</li>
+                                                        <li>Sabudana Kichadi</li>
+                                                        <li>Besan Chilla with curd</li>
+                                                        <li>Idli with Chutney</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Veggie Delights</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Paneer butter masala</li>
+                                                        <li>Aloo jeera</li>
+                                                        <li>Paneer kadhai</li>
+                                                        <li>Bhindi masala</li>
+                                                        <li>Bhari vangi</li>
+                                                        <li>Amritsari Chole</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dal</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Dal Makhni</li>
+                                                        <li>Dal Fry</li>
+                                                        <li>Dal Tadka</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rice</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Steam Rice</li>
+                                                        <li>Peas Pulao</li>
+                                                        <li>Jeera Rice</li>
+                                                        <li>Tawa Pulao</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Breads</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Phulka</li>
+                                                        <li>Tawa Paratha</li>
+                                                        <li>Bhature</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Desserts</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Sevaiyan Kheer</li>
+                                                        <li>Gulab Jamun</li>
+                                                        <li>Jalebi</li>
+                                                        <li>Sheera</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>Non-Vegetarian Options</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options (Choose any 1)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Breakfast</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Poha</li>
+                                                        <li>Upma</li>
+                                                        <li>Besan chilla with curd</li>
+                                                        <li>Egg omelette & toast/pav</li>
+                                                        <li>Scrambled Egg & toast/pav</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non-Veg Mains</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Butter chicken</li>
+                                                        <li>Chicken kolhapuri</li>
+                                                        <li>Chicken lababdar</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Everyday Picks</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Chicken Rassa</li>
+                                                        <li>Egg Curry</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>Snacky Bucket Options</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>Items</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Veg Bucket</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Hara Bhara Kebab</li>
+                                                        <li>Pav bhaji</li>
+                                                        <li>Veg Biryani</li>
+                                                        <li>Masala Pav</li>
+                                                        <li>Papad/pickle/raita</li>
+                                                        <li>Ice cream/gulab jamun</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Non-Veg Bucket</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Chicken Kheema Pav</li>
+                                                        <li>Chicken Biryani</li>
+                                                        <li>Punjabi Aloo Tikki</li>
+                                                        <li>Masala Pav</li>
+                                                        <li>Papad/pickle/raita</li>
+                                                        <li>Ice Cream/Gulab Jamun</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-category">
+                                <h4>High Tea</h4>
+                                <div class="menu-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Category</th>
+                                                <th>Options (Choose any 1)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Snacks</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Vegetable Pakoda (onion, potato, cauliflower, chilly)</li>
+                                                        <li>Vada Pav</li>
+                                                        <li>Bombay Sandwich</li>
+                                                        <li>Cheese Sandwich</li>
+                                                        <li>Bhel</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Accompaniments</td>
+                                                <td>
+                                                    <ul>
+                                                        <li>Tea/Coffee</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="menu-note important">
+                                <p><i class="fas fa-info-circle"></i> Note: Tandoor Platters and Rotis available at an additional cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>📝 Important Notes</h3>
+                    <div class="food-notes">
+                        <div class="note-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Please place your food menu order at least <strong>72 hours</strong> in advance and make payment at least <strong>48 hours</strong> in advance.</p>
+                        </div>
+                        
+                        <div class="note-item">
+                            <i class="fas fa-calendar-times"></i>
+                            <p>Cancellation Policy:</p>
+                            <ul>
+                                <li>Cancellation 3 days prior to check-in date: Full refund</li>
+                                <li>After that: No refund</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="note-item">
+                            <i class="fas fa-plus-circle"></i>
+                            <p>Additional items can be requested based on kitchen's availability.</p>
+                        </div>
+                        
+                        <div class="note-item">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Menu options are subject to availability of raw materials. Management reserves the right to modify options without prior notice.</p>
+                        </div>
+                        
+                        <div class="note-item">
+                            <i class="fas fa-door-closed"></i>
+                            <p>Kitchen closes at 10:30 PM. Utensils from meals consumed after this time will be cleaned the following morning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="amenities-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>What this place offers</h2>
+            
+            <div class="amenities-grid">
+                <!-- Add this new category after the opening of amenities-grid div and before the Indoor Amenities category -->
+                <div class="amenity-category">
+                    <div class="category-header" data-category="basic">
+                        <h3>🏛️ Basic Facilities</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-content">
+                        <li><i class="fas fa-bed"></i> 5 Finely Crafted Rooms</li>
+                        <li><i class="fas fa-bath"></i> Bathrooms</li>
+                        <li><i class="fas fa-couch"></i> 4 Common Areas</li>
+                        <li><i class="fas fa-utensils"></i> Full Kitchen</li>
+                        <li><i class="fas fa-couch"></i> Lounge</li>
+                        <li><i class="fas fa-umbrella-beach"></i> Pool Side</li>
+                        <li><i class="fas fa-water"></i> Lake Facing Seat Out</li>
+                        <li><i class="fas fa-fire"></i> Dedicated Fire Area</li>
+                    </ul>
+                </div>
+
+                <!-- Indoor Amenities -->
+                <div class="amenity-category">
+                    <div class="category-header" data-category="indoor">
+                        <h3>🏠 Indoor Amenities</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-content">
+                        <!-- Bathroom -->
+                        <li><i class="fas fa-bath"></i> Bathrooms</li>
+                        <li><i class="fas fa-pump-soap"></i> Cleaning products</li>
+                        <li><i class="fas fa-shower"></i> Shampoo & Body soap</li>
+                        <li><i class="fas fa-hot-tub"></i> Hot water</li>
+                        <li><i class="fas fa-shower"></i> Shower gel</li>
+                        
+                        <!-- Bedroom and Laundry -->
+                        <li><i class="fas fa-bed"></i> Essentials (Towels, bed sheets, soap, toilet paper)</li>
+                        <li><i class="fas fa-tshirt"></i> Hangers & Clothes storage</li>
+                        <li><i class="fas fa-bed"></i> Bed linen & Extra pillows/blankets</li>
+                        <li><i class="fas fa-moon"></i> Room-darkening blinds</li>
+                        <li><i class="fas fa-temperature-high"></i> Iron</li>
+                        <li><i class="fas fa-wind"></i> Clothes drying rack</li>
+                    </ul>
+                </div>
+
+                <!-- Comfort & Entertainment -->
+                <div class="amenity-category">
+                    <div class="category-header" data-category="comfort">
+                        <h3>🎵 Comfort & Entertainment</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-content">
+                        <li><i class="fas fa-music"></i> Sound system</li>
+                        <li><i class="fas fa-snowflake"></i> Air conditioning</li>
+                        <li><i class="fas fa-fan"></i> Ceiling fan</li>
+                        <li><i class="fas fa-fan"></i> Portable fans</li>
+                        <li><i class="fas fa-wifi"></i> Wifi</li>
+                    </ul>
+                </div>
+
+                <!-- Kitchen & Dining -->
+                <div class="amenity-category">
+                    <div class="category-header" data-category="kitchen">
+                        <h3>🍴 Kitchen & Dining</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-content">
+                        <li><i class="fas fa-faucet"></i> Full Kitchen</li>
+                        <li><i class="fas fa-snowflake"></i> Fridge & Freezer</li>
+                        <li><i class="fas fa-utensils"></i> Cooking basics (Pots, pans, oil, salt, pepper)</li>
+                        <li><i class="fas fa-utensils"></i> Dishes and cutlery</li>
+                        <li><i class="fas fa-chair"></i> Dining table</li>
+                        <li><i class="fas fa-mug-hot"></i> Coffee</li>
+                    </ul>
+                </div>
+
+                <!-- Outdoor & Location Features -->
+                <div class="amenity-category">
+                    <div class="category-header" data-category="outdoor">
+                        <h3>🌿 Outdoor & Location</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="category-content">
+                        <li><i class="fas fa-water"></i> Waterfront & Lake access</li>
+                        <li><i class="fas fa-door-open"></i> Private entrance</li>
+                        <li><i class="fas fa-umbrella-beach"></i> Patio or balcony</li>
+                        <li><i class="fas fa-tree"></i> Garden</li>
+                        <li><i class="fas fa-fire"></i> Firepit</li>
+                        <li><i class="fas fa-utensils"></i> Outdoor dining area</li>
+                        <li><i class="fas fa-sailboat"></i> Kayak</li>
+                        <li><i class="fas fa-car"></i> Free parking on premises</li>
+                        <li><i class="fas fa-swimming-pool"></i> Pool</li>
+                        <li><i class="fas fa-paw"></i> Pets allowed</li>
+                        <li><i class="fas fa-smoking"></i> Smoking allowed</li>
+                        <li><i class="fas fa-shower"></i> Outdoor shower</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Checking Out Guide</h2>
+            
+            <div class="modal-sections">
+                <div class="checkout-section">
+                    <h3>🕐 Checkout Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>Night Before</h4>
+                            <ul>
+                                <li>Pack your belongings</li>
+                                <li>Collect all valuables</li>
+                                <li>Set alarm for checkout time</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Morning Of</h4>
+                            <ul>
+                                <li>Checkout time: 11:00 AM</li>
+                                <li>Breakfast ends at 10:00 AM</li>
+                                <li>Housekeeping final check at 10:30 AM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>📋 Checkout Checklist</h3>
+                    <div class="checklist-grid">
+                        <div class="checklist-item">
+                            <h4>Kitchen</h4>
+                            <ul>
+                                <li>Empty refrigerator</li>
+                                <li>Clean used utensils</li>
+                                <li>Dispose of garbage</li>
+                                <li>Turn off all appliances</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-item">
+                            <h4>Rooms</h4>
+                            <ul>
+                                <li>Collect all belongings</li>
+                                <li>Place used towels in bathroom</li>
+                                <li>Turn off AC/heater</li>
+                                <li>Close all windows</li>
+                            </ul>
+                        </div>
+                        <div class="checklist-item">
+                            <h4>Final Steps</h4>
+                            <ul>
+                                <li>Return keys to lockbox</li>
+                                <li>Close and lock all doors</li>
+                                <li>Complete feedback form</li>
+                                <li>Text host after leaving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>🚗 Transportation Options</h3>
+                    <div class="transport-options">
+                        <div class="transport-item">
+                            <h4>Airport Transfer</h4>
+                            <p>• Pre-book through reception</p>
+                            <p>• Fixed rate: ₹1200</p>
+                            <p>• Book 4 hours in advance</p>
+                        </div>
+                        <div class="transport-item">
+                            <h4>Local Taxi</h4>
+                            <p>• Ola/Uber available</p>
+                            <p>• Auto stand nearby</p>
+                            <p>• Reception can arrange</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-section">
+                    <h3>🚗 Important Notes</h3>
+                    <div class="notes-container">
+                        <div class="note">
+                            <h4>Late Checkout</h4>
+                            <p>• Request 24 hours before</p>
+                            <p>• Subject to availability</p>
+                            <p>• Additional charges may apply</p>
+                        </div>
+                        <div class="note">
+                            <h4>Luggage Storage</h4>
+                            <p>• Available at reception</p>
+                            <p>• Free for same day</p>
+                            <p>• Maximum 8 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="reviews-modal" class="modal">
+        <div class="modal-content modal-large">
+            <span class="close">&times;</span>
+            <h2>Guest Reviews</h2>
+            <div class="review-platform-links">
+                <a href="https://www.airbnb.co.in/rooms/984593235506575106/reviews?source_impression_id=p3_1736754185_P3kT1z_QC9TVtE9W&scroll_to_review=1071457750769548532" 
+                   target="_blank" 
+                   class="platform-button airbnb">
+                    <i class="fab fa-airbnb"></i>
+                    View Airbnb Reviews
+                </a>
+                <a href="https://www.google.com/maps/place/Cape+Nirvana/@18.3561157,73.5547659,17z/data=!4m11!3m10!1s0x3bc29d5aaf6413cf:0x71640aac555b5fd9!5m2!4m1!1i2!8m2!3d18.3561157!4d73.5547659!9m1!1b1!16s%2Fg%2F11krydndm5?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" 
+                   target="_blank" 
+                   class="platform-button google">
+                    <i class="fab fa-google"></i>
+                    View Google Reviews
+                </a>
+            </div>
+            <div class="reviews-content">
+                <div class="review">
+                    <h4>Pranav Dhaneshwar</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>Location is wow! Right at the water front. The resort is actually a little bigger than it looks in photos. There are 5 rooms. The ones by the pool are bigger. The dining area is very pleasant and one can hang out there otherwise as well. Service staff is humble and prompt. Though a couple of more hands would be better. Food is decent. You need to inform well in advance about your food requirements. Even soft drinks etc is not available without prior intimation. Wifi is available but there can be internet issues. No phone network works. Overall a good experience.</p>
+                </div>
+
+                <div class="review">
+                    <h4>Dexter Bassist</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>Our stay at Cape Nirvana was truly memorable. The rooms had a great ambiance and were very hygienic. Surrounded by greenery and nature, it was the perfect escape from the concrete jungle. The property features a pool, a common area, a dining area, and a bonfire spot. The view here is simply stunning. The staff, especially Omprakash-the care taker was extremely hospitable, providing excellent food and service. Overall, our experience was fantastic. Highly recommended for anyone looking to relax and enjoy nature. Also, Stargazing and fireflies are a bonus if the weather is in your favour!</p>
+                </div>
+
+                <div class="review">
+                    <h4>Vaibs Nagda</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>Visited this place with my friends. It is one of the best places if you want to have a luxurious stay and yet want to have fun with your friends. This place has many common areas and my best space was the bar lounge. It has a private pool and a private access to the lake. The USP is the food and the service. The people who own and manage it really ensure that we have a good time there. Will definitely want to come again and recommend it to everyone.</p>
+                </div>
+
+                <div class="review">
+                    <h4>Chetan Chawane</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>We had an excellent stay at this resort. The property is impressive, well-maintained, and boasts spacious, clean rooms. The location, right next to the lake, adds a serene touch to the experience. The staff was exceptionally supportive, and the food was delightful. The swimming pool and various sitting areas enhance the overall enjoyment. The resort's attention to detail, including the provision of speakers and mic, created a great atmosphere. The availability of boat facilities and designated bonfire areas further enriched our stay. The lush green surroundings added a refreshing touch to the entire experience. Highly recommended!</p>
+                </div>
+
+                <div class="review">
+                    <h4>Snehal Jagdale</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>Randomly landed on their page and got in touch with them for packages. Their communication from the first call till we checked out was very good. This place is in Panshet, slightly secluded, which is better if you want to get away and switch off. More importantly, the pricing for this space is also too good to be true. The rooms are nicely made, the food is really good and the staff is really nice. The pictures online won't do justice to this place. Would only recommend you to visit it for yourself.</p>
+                </div>
+
+                <div class="review">
+                    <h4>Ankit Tiwari</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>This place offers a delightful experience with its delectable cuisine and breathtaking lake views. The culinary offerings are diverse and well-prepared, catering to various tastes. Combined with the serene backdrop of the lake, it creates a perfect retreat for those seeking both culinary delights and scenic tranquility.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="book-now-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Stay</h2>
+            <div class="booking-options">
+                <a href="https://wa.me/9850769955?text=Hi%2C%20I%27m%20interested%20in%20learning%20more%20about%20Banyan%20Tree%20PoolVilla.%20Could%20you%20please%20share%20details%20about%20availability%2C%20amenities%2C%20or%20anything%20else%20I%20should%20know%3F%20Thanks%21" target="_blank" class="booking-link">
+                    <div class="booking-platform">
+                        <div class="platform-icon-wrapper whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="booking-platform-content">
+                            <h3>WhatsApp</h3>
+                            <p>Chat directly with the host</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.airbnb.co.in/rooms/984593235506575106?source_impression_id=p3_1736754185_P3kT1z_QC9TVtE9W#availability-calendar" target="_blank" class="booking-link">
+                    <div class="booking-platform">
+                        <div class="platform-icon-wrapper airbnb">
+                            <i class="fab fa-airbnb"></i>
+                        </div>
+                        <div class="booking-platform-content">
+                            <h3>Airbnb</h3>
+                            <p>Secure booking through Airbnb</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

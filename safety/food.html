@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu - Banyan Tree Pool Villa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="icon" href="assets/favicon.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Back Button -->
+        <div class="back-header">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+                Back
+            </a>
+            <h1>Food Menu</h1>
+        </div>
+
+        <!-- Meal Timings -->
+        <div class="meal-timings">
+            <div class="meal-time">
+                <i class="fas fa-sun"></i>
+                <div class="meal-details">
+                    <h4>Breakfast</h4>
+                    <p>9:00 AM - 10:00 AM</p>
+                </div>
+            </div>
+            <div class="meal-time">
+                <i class="fas fa-utensils"></i>
+                <div class="meal-details">
+                    <h4>Lunch</h4>
+                    <p>2:00 PM - 3:00 PM</p>
+                </div>
+            </div>
+            <div class="meal-time">
+                <i class="fas fa-coffee"></i>
+                <div class="meal-details">
+                    <h4>High Tea</h4>
+                    <p>5:00 PM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="meal-time">
+                <i class="fas fa-moon"></i>
+                <div class="meal-details">
+                    <h4>Dinner</h4>
+                    <p>9:00 PM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Navigation -->
+        <div class="menu-nav">
+            <button class="menu-nav-btn active" data-menu="veg">
+                <i class="fas fa-leaf"></i>
+                Veg Menu
+            </button>
+            <button class="menu-nav-btn" data-menu="mix">
+                <i class="fas fa-utensils"></i>
+                Mix Menu
+            </button>
+            <button class="menu-nav-btn" data-menu="alacarte">
+                <i class="fas fa-concierge-bell"></i>
+                À La Carte
+            </button>
+            <button class="menu-nav-btn" data-menu="traditional">
+                <i class="fas fa-mortar-pestle"></i>
+                Traditional
+            </button>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="menu-container">
+            <!-- Veg Menu Section -->
+            <div class="menu-section active" data-menu="veg">
+                <div class="menu-price">₹2,100/- per person</div>
+                
+                <div class="menu-category">
+                    <h4>Lunch & Dinner Buckets</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Bucket 1</td>
+                                    <td>
+                                        <ul>
+                                            <li>Paneer Butter Masala • Aloo Jeera</li>
+                                            <li>Phulka/Tawa Paratha • Dal Makhani</li>
+                                            <li>Steamed Rice</li>
+                                            <li>Papad, Pickle, Salad • Sevaiyan Kheer</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 2</td>
+                                    <td>
+                                        <ul>
+                                            <li>Veg. Kolhapuri</li>
+                                            <li>Aloo Gobi</li>
+                                            <li>Phulka/Tawa Paratha • Dal Fry</li>
+                                            <li>Peas Pulao</li>
+                                            <li>Papad, Pickle, Salad • Gulab Jamun</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 3</td>
+                                    <td>
+                                        <ul>
+                                            <li>Paneer Kadhai • Bhindi Masala</li>
+                                            <li>Phulka/Tawa Paratha • Dal Tadka</li>
+                                            <li>Jeera Rice</li>
+                                            <li>Papad, Pickle, Salad • Jalebi</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 4</td>
+                                    <td>
+                                        <ul>
+                                            <li>Bharli Vangi • Zhunka</li>
+                                            <li>Bhakri</li>
+                                            <li>Masale Bhat • Koshimbir</li>
+                                            <li>Papad, Pickle, Salad • Sheera</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 6</td>
+                                    <td>
+                                        <ul>
+                                            <li>Plum Tomato Soup</li>
+                                            <li>Red/White Sauce Pasta</li>
+                                            <li>Quesadilla (Corn And Cheese) • Garlic Toast</li>
+                                            <li>Fruit Custard</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 7</td>
+                                    <td>
+                                        <ul>
+                                            <li>Punjabi Aloo Tikki • Amritsari Chole</li>
+                                            <li>Tawa Pulao</li>
+                                            <li>Bhature</li>
+                                            <li>Papad, Pickle, Raita • Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 8</td>
+                                    <td>
+                                        <ul>
+                                            <li>Manchow Soup</li>
+                                            <li>Paneer Manchurian (Dry/Gravy)</li>
+                                            <li>Stir-Fry Vegetables (Hot Garlic Sauce) • Hakka Noodles</li>
+                                            <li>Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 9</td>
+                                    <td>
+                                        <ul>
+                                            <li>Hara Bhara Kebab • Pav Bhaji</li>
+                                            <li>Veg. Biryani • Masala Pav</li>
+                                            <li>Papad, Pickle, Raita • Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>Breakfast</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Light Breakfast<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Poha</li>
+                                            <li>Upma</li>
+                                            <li>Sabudana Khichdi</li>
+                                            <li>Besan Chilla with curd</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Heavy Breakfast<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Medu Vada with Chutney & Sambar</li>
+                                            <li>Puneri Misal Pav</li>
+                                            <li>Puri & Aloo Bhaji</li>
+                                            <li>Baked Beans On Toast</li>
+                                            <li>Thalipeeth</li>
+                                            <li>Idli with Chutney & Sambar</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>High Tea</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Evening Snacks<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Vegetable Pakoda (onion, potato, cauliflower, chilly)</li>
+                                            <li>Vada Pav</li>
+                                            <li>Bombay Sandwich</li>
+                                            <li>Cheese Sandwich</li>
+                                            <li>Bhel</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Accompaniments</td>
+                                    <td>
+                                        <ul>
+                                            <li>Tea/Coffee</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mix Menu Section -->
+            <div class="menu-section" data-menu="mix">
+                <div class="menu-price">₹2,500/- per person</div>
+                
+                <div class="menu-category">
+                    <h4>Lunch & Dinner Buckets</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Bucket 1</td>
+                                    <td>
+                                        <ul>
+                                            <li>Butter Chicken</li>
+                                            <li>Paneer Butter Masala</li>
+                                            <li>Aloo Jeera</li>
+                                            <li>Phulka</li>
+                                            <li>Dal Makhani</li>
+                                            <li>Steamed Rice</li>
+                                            <li>Papad, Pickle, Salad • Sevaiyan Kheer</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 2</td>
+                                    <td>
+                                        <ul>
+                                            <li>Saag Murgh</li>
+                                            <li>Veg. Kolhapuri • Aloo Gobi</li>
+                                            <li>Ajwain Paratha • Dal Fry</li>
+                                            <li>Peas Pulao</li>
+                                            <li>Papad, Pickle, Salad • Gulab Jamun</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 3</td>
+                                    <td>
+                                        <ul>
+                                            <li>Chicken Lababdar • Paneer Kadhai</li>
+                                            <li>Bhindi Masala</li>
+                                            <li>Phulka/Tawa Paratha • Dal Tadka</li>
+                                            <li>Jeera Rice</li>
+                                            <li>Papad, Pickle, Salad • Jalebi</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 4</td>
+                                    <td>
+                                        <ul>
+                                            <li>Kolhapuri Chicken • Bharli Vangi</li>
+                                            <li>Zhunka</li>
+                                            <li>Bhakri</li>
+                                            <li>Masale Bhat • Koshimbir</li>
+                                            <li>Papad, Pickle, Salad • Sheera</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 6</td>
+                                    <td>
+                                        <ul>
+                                            <li>Plum Tomato Soup</li>
+                                            <li>Chicken Fajita Wrap</li>
+                                            <li>Red/White Sauce Pasta</li>
+                                            <li>Quesadilla (Corn And Cheese) • Garlic Toast</li>
+                                            <li>Fruit Custard</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 7</td>
+                                    <td>
+                                        <ul>
+                                            <li>Punjabi Aloo Tikki</li>
+                                            <li>Amritsari Chole</li>
+                                            <li>Chicken Kheema Pav • Tawa Pulao</li>
+                                            <li>Bhature</li>
+                                            <li>Raita, Papad, Pickle • Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 8</td>
+                                    <td>
+                                        <ul>
+                                            <li>Manchow Soup</li>
+                                            <li>Chicken Chilli (Dry/Gravy)</li>
+                                            <li>Paneer Manchurian (Dry/Gravy)</li>
+                                            <li>Stir-Fry Vegetables (Hot Garlic Sauce)</li>
+                                            <li>Hakka Noodles • Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bucket 9</td>
+                                    <td>
+                                        <ul>
+                                            <li>Hara Bhara Kebab • Pav Bhaji</li>
+                                            <li>Veg. Biryani</li>
+                                            <li>Chicken Biryani • Masala Pav</li>
+                                            <li>Raita, Papad, Pickle • Ice Cream</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>Breakfast</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Light Breakfast<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Poha</li>
+                                            <li>Upma</li>
+                                            <li>Sabudana Khichadi</li>
+                                            <li>Besan Chilla with Pickle & Curd</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Heavy Breakfast<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Medu Vada with Chutney & Sambar</li>
+                                            <li>Puneri Misal Pav</li>
+                                            <li>Puri & Aloo Bhaji</li>
+                                            <li>Baked Beans On Toast</li>
+                                            <li>Thalipeeth</li>
+                                            <li>Idli with Chutney & Sambar</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Accompaniments</td>
+                                    <td>
+                                        <ul>
+                                            <li>Tea/Coffee</li>
+                                            <li>Bread Butter & Jam</li>
+                                            <li>Eggs To Order (Sunny Side Up, Omelette, Bhurji)</li>
+                                            <li>Fruit (Any 1): Watermelon/Papaya/Banana</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>High Tea</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Evening Snacks<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Vegetable Pakoda (onion, potato, cauliflower, chilly) • Bread Pakoda</li>
+                                            <li>Vada Pav</li>
+                                            <li>Bombay Sandwich • Samosa</li>
+                                            <li>Bhel</li>
+                                            <li>Sev Puri</li>
+                                            <li>Moong Dal Vada</li>
+                                            <li>Cheese Sandwich</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Accompaniments</td>
+                                    <td>
+                                        <ul>
+                                            <li>Tea/Coffee</li>
+                                            <li>French Fries</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- À La Carte Section -->
+            <div class="menu-section" data-menu="alacarte">
+                <div class="menu-timing">
+                    <i class="fas fa-clock"></i>
+                    Lunch: 2 PM to 3 PM | Dinner: 9 PM to 10 PM
+                </div>
+
+                <!-- Vegetarian Section -->
+                <div class="menu-category">
+                    <h4>Vegetarian</h4>
+                    <div class="alacarte-table">
+                        <table>
+                            <tr>
+                                <td class="item-name">Beetroot Tikki (8 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Aloo Tikki (8 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Spring Roll (8 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Vegetable Crispy (8 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Gobi Manchurian Dry (8 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Cheese Corn Balls (10 Pcs)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Pav Bhaji (Per Plate)</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Veg Biryani</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Hakka Noodles</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Veg Fried Rice</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Tawa Paneer Fry (8 Pcs)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Paneer Chilli (8 Pcs)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Red/White Sauce Pasta</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Paneer Manchurian (Gravy/Dry)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Stir Fry Vegetables (Hot Garlic Sauce)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Non-Vegetarian Section -->
+                <div class="menu-category">
+                    <h4>Non-Vegetarian</h4>
+                    <div class="alacarte-table">
+                        <table>
+                            <tr>
+                                <td class="item-name">Chicken Fry (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken 65 (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Sukka (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Shami Kebab (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Lollipop (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Crispy (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chilli Chicken Dry (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Salt & Peppers (8 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Popcorn (15 Pc)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Shashlik</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken Fried Rice</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Egg Fried Rice</td>
+                                <td class="item-price">₹550</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Goan Fish Curry</td>
+                                <td class="item-price">₹750</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Prawns Curry</td>
+                                <td class="item-price">₹800</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Grilled Fish</td>
+                                <td class="item-price">₹750</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- BBQ & Tandoor Section -->
+                <div class="menu-category">
+                    <h4>BBQ & Tandoor</h4>
+                    <div class="alacarte-table">
+                        <table>
+                            <tr>
+                                <td class="item-name">Veg BBQ (Per Plate)</td>
+                                <td class="item-price">₹650</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Chicken BBQ (Per Plate)</td>
+                                <td class="item-price">₹700</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Fish BBQ (Per Plate)</td>
+                                <td class="item-price">₹800</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Tandoor Veg Platter (Any 4 Veggies)</td>
+                                <td class="item-price">₹800</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Tandoor Chicken Platter</td>
+                                <td class="item-price">₹1200</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Tandoor Sea Food Platter (Fish & Prawns)</td>
+                                <td class="item-price">₹1500</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Tandoor Roti</td>
+                                <td class="item-price">₹35</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Laccha Paratha</td>
+                                <td class="item-price">₹50</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Stuffed Paratha</td>
+                                <td class="item-price">₹60</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Breakfast Section -->
+                <div class="menu-category">
+                    <h4>Breakfast <span class="timing">(9 AM to 10 AM)</span></h4>
+                    <div class="alacarte-table">
+                        <table>
+                            <tr>
+                                <td class="item-name">Poha</td>
+                                <td class="item-price">₹80</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Upma</td>
+                                <td class="item-price">₹80</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Sabudana Khichadi</td>
+                                <td class="item-price">₹80</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Besan Chilla with Pickle & Curd</td>
+                                <td class="item-price">₹100</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Medu Vada with Chutney & Sambar</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Puneri Misal Pav</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Puri & Aloo Bhaji</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Idli with Chutney & Sambar</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Egg Omelette & Toast/Pav</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Egg Masala Bhurji & Toast/Pav</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Scrambled Egg & Toast/Pav</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Hi-Tea Section -->
+                <div class="menu-category">
+                    <h4>Hi-Tea <span class="timing">(5 PM to 6 PM)</span></h4>
+                    <div class="alacarte-table">
+                        <table>
+                            <tr>
+                                <td class="item-name">Vegetable Pakoda<br><span class="item-desc">(Onion, Potato, Cauliflower, Chilly)</span></td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Bombay Sandwich</td>
+                                <td class="item-price">₹150</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Cheese Sandwich</td>
+                                <td class="item-price">₹120</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Vada Pav (2 Pc)</td>
+                                <td class="item-price">₹100</td>
+                            </tr>
+                            <tr>
+                                <td class="item-name">Bhel</td>
+                                <td class="item-price">₹100</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Notes Section -->
+                <div class="menu-note important">
+                    <p><i class="fas fa-info-circle"></i> Notes:</p>
+                    <ul>
+                        <li>Along with the food package, guests can select up to 2 dishes from above.</li>
+                        <li>For À la carte menu only, guests can select up to 4 dishes from above.</li>
+                        <li>All rates mentioned are per plate.</li>
+                        <li>Guests can place an order of any 1 veg/non-veg item.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Traditional Delight Section -->
+            <div class="menu-section" data-menu="traditional">
+                <div class="menu-prices">
+                    <div class="price-item">
+                        <span class="price-label">Veg</span>
+                        <span class="price-value">₹1,500/- per person, per day</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-label">Non-Veg</span>
+                        <span class="price-value">₹1,800/- per person, per day</span>
+                    </div>
+                </div>
+
+                <div class="menu-inclusion">
+                    <p><i class="fas fa-check-circle"></i> Includes: Breakfast, Lunch, High Tea, and Dinner</p>
+                </div>
+
+                <div class="menu-category">
+                    <h4>Vegetarian Options</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Breakfast<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Poha</li>
+                                            <li>Upma</li>
+                                            <li>Sabudana Kichadi</li>
+                                            <li>Besan Chilla with curd</li>
+                                            <li>Idli with Chutney</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Veggie Delights<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Paneer butter masala</li>
+                                            <li>Aloo jeera</li>
+                                            <li>Paneer kadhai</li>
+                                            <li>Bhindi masala</li>
+                                            <li>Bhari vangi</li>
+                                            <li>Amritsari Chole</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dal<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Dal Makhni</li>
+                                            <li>Dal Fry</li>
+                                            <li>Dal Tadka</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Rice<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Steam Rice</li>
+                                            <li>Peas Pulao</li>
+                                            <li>Jeera Rice</li>
+                                            <li>Tawa Pulao</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Breads<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Phulka</li>
+                                            <li>Tawa Paratha</li>
+                                            <li>Bhature</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Desserts<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Sevaiyan Kheer</li>
+                                            <li>Gulab Jamun</li>
+                                            <li>Jalebi</li>
+                                            <li>Sheera</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Accompaniments</td>
+                                    <td>
+                                        <ul>
+                                            <li>Papad</li>
+                                            <li>Pickle</li>
+                                            <li>Salad</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>Non-Vegetarian Options</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Breakfast</td>
+                                    <td>
+                                        <ul>
+                                            <li>Poha</li>
+                                            <li>Upma</li>
+                                            <li>Besan chilla with curd</li>
+                                            <li>Egg omelette & toast/pav</li>
+                                            <li>Scrambled Egg & toast/pav</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Veg Mains<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Butter chicken</li>
+                                            <li>Chicken kolhapuri</li>
+                                            <li>Chicken lababdar</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Everyday Picks<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Chicken Rassa</li>
+                                            <li>Egg Curry</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>Snacky Bucket Options</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Veg Bucket</td>
+                                    <td>
+                                        <ul>
+                                            <li>Hara Bhara Kebab</li>
+                                            <li>Pav bhaji</li>
+                                            <li>Veg Biryani</li>
+                                            <li>Masala Pav</li>
+                                            <li>Papad/pickle/raita</li>
+                                            <li>Ice cream/gulab jamun</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Non-Veg Bucket</td>
+                                    <td>
+                                        <ul>
+                                            <li>Chicken Kheema Pav</li>
+                                            <li>Chicken Biryani</li>
+                                            <li>Punjabi Aloo Tikki</li>
+                                            <li>Masala Pav</li>
+                                            <li>Papad/pickle/raita</li>
+                                            <li>Ice Cream/Gulab Jamun</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-category">
+                    <h4>High Tea</h4>
+                    <div class="menu-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Snacks<br>(Choose any 1)</td>
+                                    <td>
+                                        <ul>
+                                            <li>Vegetable Pakoda (onion, potato, cauliflower, chilly)</li>
+                                            <li>Vada Pav</li>
+                                            <li>Bombay Sandwich</li>
+                                            <li>Cheese Sandwich</li>
+                                            <li>Bhel</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Accompaniments</td>
+                                    <td>
+                                        <ul>
+                                            <li>Tea/Coffee</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="menu-note important">
+                    <p><i class="fas fa-info-circle"></i> Note: Tandoor Platters and Rotis available at an additional cost.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/food.js"></script>
+</body>
+</html> 
