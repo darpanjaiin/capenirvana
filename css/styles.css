@@ -1844,16 +1844,17 @@ body {
 }
 
 /* Instagram Follow Button */
-.instagram-follow-btn {
+.instagram-follow-btn,
+.live-tour-btn {
     position: absolute;
-    top: 20px;
     right: 20px;
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
-    padding: 8px 16px;
-    border-radius: 25px;
+    padding: 10px 20px;
+    border-radius: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     text-decoration: none;
     font-size: 14px;
@@ -1863,31 +1864,55 @@ body {
     z-index: 10;
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255,255,255,0.2);
+    width: 190px;  /* Fixed width for both buttons */
+    white-space: nowrap;
 }
 
-.instagram-follow-btn i {
+.instagram-follow-btn {
+    top: 20px;
+}
+
+.live-tour-btn {
+    top: 70px;
+    background: linear-gradient(45deg, #0062ff 0%, #0062ff 100%);
+}
+
+.instagram-follow-btn i,
+.live-tour-btn i {
     font-size: 16px;
 }
 
-.instagram-follow-btn:hover {
+.instagram-follow-btn:hover,
+.live-tour-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
-.instagram-follow-btn:active {
+.instagram-follow-btn:active,
+.live-tour-btn:active {
     transform: translateY(0);
 }
 
-/* Mobile optimization */
+/* Mobile optimization for both buttons */
 @media (max-width: 768px) {
-    .instagram-follow-btn {
-        top: 15px;
-        right: 15px;
-        padding: 6px 12px;
+    .instagram-follow-btn,
+    .live-tour-btn {
+        padding: 8px 16px;
         font-size: 13px;
+        right: 15px;
+        width: 170px;  /* Slightly smaller width on mobile */
     }
     
-    .instagram-follow-btn i {
+    .instagram-follow-btn {
+        top: 15px;
+    }
+
+    .live-tour-btn {
+        top: 65px;
+    }
+    
+    .instagram-follow-btn i,
+    .live-tour-btn i {
         font-size: 15px;
     }
 }
